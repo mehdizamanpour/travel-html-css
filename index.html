@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
         <a href="#" class="logo"><span>T</span>ravel</a>
         <nav class="navbar">
             <a href="#home">home</a>
@@ -33,6 +34,7 @@
     </header>
     <!-- login -->
     <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
         <form action="">
             <h3>Login</h3>
             <input type="email" class="box" placeholder="Enter your email">
@@ -44,6 +46,65 @@
             <p>Don't have any account? <a href="#">Register </a></p>
         </form>
     </div>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>adventure is worthwhile</h3>
+            <p>discover new place with us</p>
+            <a href=#"" class="btn">discover more</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="vid/vid1.mp4"></span>
+            <span class="vid-btn" data-src="vid/vid2.mp4"></span>
+            <span class="vid-btn" data-src="vid/vid3.mp4"></span>
+            <span class="vid-btn" data-src="vid/vid4.mp4"></span>
+            <span class="vid-btn" data-src="vid/vid5.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="vid/vid2.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+    <!-- book section -->
+
+    <section class="book" id="book">
+
+        <h1 class="heading">
+            <span>B</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="img/img1.png" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>Where to go</h3>
+                    <input type="text" placeholder="Place name">
+                </div>
+                <div class="inputBox">
+                    <h3>Haw many</h3>
+                    <input type="number" placeholder="Number of guests">
+                </div>
+                <div class="inputBox">
+                    <h3>Arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="Book now">
+            </form>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
